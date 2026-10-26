@@ -1,0 +1,23 @@
+{
+  "geode": "4.0.0",
+  "gd": { "win": "2.2074", "android": "2.2074" },
+  "id": "yourname.click-buffer",
+  "name": "Click Buffer",
+  "version": "v1.0.0",
+  "developer": "yourname",
+  "description": "Buffers early clicks and fires them when you can jump.",
+  "settings": {
+    "enabled": { "type": "bool", "name": "Enabled", "default": true },
+    "buffer-frames": {
+      "type": "int",
+      "name": "Buffer Window (frames)",
+      "description": "How many frames early a click can be and still count.",
+      "default": 3,
+      "min": 0,
+      "max": 30,
+      "control": { "input": true, "slider": true }
+    },
+    "buffer-orbs": { "type": "bool", "name": "Buffer on Orbs", "default": true },
+    "buffer-ground": { "type": "bool", "name": "Buffer on Ground", "default": true }
+  }
+}
